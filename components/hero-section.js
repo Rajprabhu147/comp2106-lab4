@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import "antd/dist/antd.min.css";
 import { Menu, Dropdown, Button } from "antd";
 import {
@@ -25,8 +26,15 @@ import {
   ShareAltOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { useRouter } from "next/router";
 
 const HeroSection = () => {
+  const router = useRouter();
+
+  const onSearchCTAClick = useCallback(() => {
+    router.push("/");
+  }, [router]);
+
   return (
     <section className="self-stretch flex flex-col py-[120px] px-[30px] items-center justify-start bg-[url('/hero-section@3x.png')] bg-cover bg-no-repeat bg-[top] text-center text-33xl text-gray-white font-body-regular-400">
       <div className="self-stretch flex flex-col items-center justify-center gap-[62px] max-w-[95%px]">
@@ -153,7 +161,10 @@ const HeroSection = () => {
                   </Button>
                 </Dropdown>
               </div>
-              <button className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded w-[102px] flex flex-row box-border items-center justify-center hover:bg-deepskyblue sm:hover:bg-deepskyblue">
+              <button
+                className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded w-[102px] flex flex-row box-border items-center justify-center hover:bg-deepskyblue sm:hover:bg-deepskyblue"
+                onClick={onSearchCTAClick}
+              >
                 <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
                   Search
                 </div>
