@@ -32,7 +32,7 @@ const HeroSection = () => {
   const router = useRouter();
 
   const onSearchCTAClick = useCallback(() => {
-    router.push("/");
+    router.push("/properties-grid-view");
   }, [router]);
 
   return (
@@ -42,7 +42,7 @@ const HeroSection = () => {
           <h1 className="m-0 self-stretch relative text-inherit leading-[72px] font-semibold font-inherit text-[inherit]">
             Find Your Dream Home
           </h1>
-          <div className="self-stretch relative text-xl leading-[28px] font-body-regular-600 text-primary-50">
+          <div className="self-stretch relative text-xl leading-[28px] font-body-large-400 text-primary-50">
             Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
             posuere cubilia curae; Proin sodales ultrices nulla blandit
             volutpat.
@@ -54,12 +54,12 @@ const HeroSection = () => {
               className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded overflow-hidden flex flex-row items-start justify-start hover:bg-deepskyblue"
               autoFocus
             >
-              <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
+              <div className="relative text-base leading-[24px] font-medium font-body-large-400 text-gray-white text-center">
                 Rent
               </div>
             </button>
             <button className="cursor-pointer [border:none] py-3 px-6 bg-gray-white rounded overflow-hidden flex flex-row items-start justify-start hover:bg-lightcyan">
-              <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-primary-400 text-center">
+              <div className="relative text-base leading-[24px] font-medium font-body-large-400 text-primary-400 text-center">
                 Sale
               </div>
             </button>
@@ -67,7 +67,7 @@ const HeroSection = () => {
           <div className="self-stretch flex flex-row flex-wrap items-start justify-center">
             <nav className="m-0 flex-1 rounded-lg bg-gray-white flex flex-row py-8 px-[62px] box-border items-center justify-between max-w-[1400px] md:w-[300px] md:flex-col md:gap-[20px] md:items-start md:justify-start md:ml-[auto] md:mr-[auto]">
               <div className="w-[137px] flex flex-col items-start justify-start gap-[16px]">
-                <div className="relative text-base leading-[24px] capitalize font-semibold font-body-regular-600 text-primary-700 text-center">
+                <div className="relative text-base leading-[24px] capitalize font-semibold font-body-large-400 text-primary-700 text-center">
                   Locations
                 </div>
                 <Dropdown
@@ -96,7 +96,7 @@ const HeroSection = () => {
                 </Dropdown>
               </div>
               <div className="w-[177px] flex flex-col items-start justify-start gap-[16px]">
-                <div className="relative text-base leading-[24px] capitalize font-semibold font-body-regular-600 text-primary-700 text-left flex items-end w-[150px]">
+                <div className="relative text-base leading-[24px] capitalize font-semibold font-body-large-400 text-primary-700 text-left flex items-end w-[150px]">
                   Property Type
                 </div>
                 <Dropdown
@@ -127,7 +127,7 @@ const HeroSection = () => {
                 </Dropdown>
               </div>
               <div className="w-[155px] flex flex-col items-start justify-start gap-[16px]">
-                <div className="relative text-base leading-[24px] capitalize font-semibold font-body-regular-600 text-primary-700 text-left flex items-end w-[150px]">
+                <div className="relative text-base leading-[24px] capitalize font-semibold font-body-large-400 text-primary-700 text-left flex items-end w-[150px]">
                   Rent Range
                 </div>
                 <Dropdown
@@ -165,7 +165,7 @@ const HeroSection = () => {
                 className="cursor-pointer [border:none] py-3 px-6 bg-primary-500 rounded w-[102px] flex flex-row box-border items-center justify-center hover:bg-deepskyblue sm:hover:bg-deepskyblue"
                 onClick={onSearchCTAClick}
               >
-                <div className="relative text-base leading-[24px] font-medium font-body-regular-600 text-gray-white text-center">
+                <div className="relative text-base leading-[24px] font-medium font-body-large-400 text-gray-white text-center">
                   Search
                 </div>
               </button>
